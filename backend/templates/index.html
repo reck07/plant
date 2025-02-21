@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>My Plants</h2>
+    <a href="{{ url_for('add_plant') }}" class="btn">Add New Plant</a>
+    <div class="plant-grid">
+        {% for plant in plants %}
+        <div class="plant-card">
+            {% if plant.image_url %}
+            <img src="{{ plant.image_url }}" alt="{{ plant.name }}">
+            {% endif %}
+            <h3>{{ plant.name }}</h3>
+            <p>{{ plant.description }}</p>
+            <div class="care-info">
+                <span>☀️ {{ plant.light }}</span>
+                <span>💧 {{ plant.water }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
