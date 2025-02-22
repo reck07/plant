@@ -2,9 +2,6 @@
 
 A full-stack web application for managing plant care routines, tracking watering schedules, and monitoring light requirements for your plants.
 
-![Project Structure](https://img.shields.io/badge/Project%20Structure-MERN%20Like-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-
 Features
 Plant Management: Add/remove plants with care details
 Visual Dashboard: View all plants with key metrics
